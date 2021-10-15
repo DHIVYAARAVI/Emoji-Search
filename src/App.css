@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 2%;
+    background-color: #002D62;
+    color: white;
+    padding-bottom: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emoji_title{
+    font-family: 'Acme';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+    width: 50%;
+    height: 35px;
+    border-radius: 50px;
+    padding-left: 2%;
+    margin-top: 1%;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Asul';
+    background-color: #CCCCFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: #6F00FF;
+    padding: 2% 2% 2% 8%;
+    font-family: 'Amaranth';
 }
 
-.App-link {
-  color: #61dafb;
+.cardy{
+    background-color: #B0E0E6;
+    border-radius: 10px;
+    margin: 5% 8% 5% 5%;
+    font-size: 18px;
+    padding: 5%;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardy:hover{
+    box-shadow: 5px 5px 50px #002147;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.symbol{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.results{
+    color: white;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .emoji_title{
+        font-family: 'Acme';
+        font-size: 30px;
+        margin-left: 30%;
+    }
+    
+    input{
+        width: 60%;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 3%;
+        margin-left: 20%;
+        font-size: 15px;
+    }
+    
+    .cards{
+        display: block;
+        padding: 2% 2% 2% 2%;
+    }
+    
+    .cardy{
+        border-radius: 5px;
+        margin: 5% 2% 10% 2%;
+    }
+    
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
